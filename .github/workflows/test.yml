@@ -1,0 +1,9 @@
+name: test
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
+jobs:
+  check-world:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo hello > hello.txt
